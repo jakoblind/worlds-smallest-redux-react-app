@@ -3,12 +3,12 @@ import logo from './logo.svg';
 import { connect } from 'react-redux'
 import './App.css';
 
-const Item = props => <li onClick={() => this.props.deleteItem(props.item.id)}>{props.item.name}</li>
+const Item = props => <li onClick={() => props.deleteItem(props.item.id)}>{props.item.name}</li>
 
-const Items = props => <ul>{ props.items.map(item => <Item key={item.id} item={item}/>) }</ul>
+const Items = props => <ul>{ props.items.map(item => <Item key={item.id} deleteItem={props.deleteItem} item={item}/>) }</ul>
 
 class App extends Component {
-  render() {
+    render() {
     return (
       <div className="App">
         <div className="App-header">
