@@ -19,7 +19,7 @@ $ npm start
 ## How to read the code
 There are only two files that's important: `src/App.js` and `src/index.js`. 
 
-`src/App.js` contains the React components and the Redux action (yes, it's only one!). 
-`src/index.js` contains the initial state, the reducer, the store.
+* `src/App.js` contains the React components and the Redux action (yes, it's only one!). 
+* `src/index.js` contains the initial state, the reducer, the store.
 
 Need more help understanding the code? Contact me, I am happy to help!
